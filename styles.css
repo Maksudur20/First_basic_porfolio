@@ -1,0 +1,114 @@
+body {
+    background:url(images/img3.jpg);
+  }
+  nav .container li
+  {
+    list-style-type: none;
+    margin: 15px;
+    overflow: hidden;
+    
+  }
+  nav .container h2
+  {
+  display: flex;
+  justify-content: center;
+
+  }
+  nav .container 
+  {
+    background: repeating-linear-gradient(to right, red 0%, blue 50%, red 100%);
+  width: 100%;
+  background-size: 200% auto;
+  background-position: 0 100%;
+  animation: gradient 2s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes gradient { 
+    0%   { background-position: 0 0; }
+    100% { background-position: -200% 0; }
+  }
+  nav .container li a
+  {
+    text-decoration: none;
+    padding: 20px;
+    font-size: x-large;
+    font-family: sans-serif;
+    color:rgb(253, 253, 253)
+        
+  }
+
+ .searchBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: linear-gradient(90deg, rgb(30, 4, 48) 0%, rgb(147, 22, 22) 39%, rgb(14, 24, 60) 100%);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
+.icon
+{
+    width:30px;
+    height: 60px;
+    padding: none;
+}
+
+.my .c2 
+{
+    display: block;
+    margin-left: auto;  
+    width:30%;  
+           
+}
+ .text
+{
+    color: aliceblue;
+    text-align: center;
+}
