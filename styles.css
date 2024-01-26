@@ -1,11 +1,24 @@
 body {
     background:url(images/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px 950px;
+     
   }
+
+  *
+  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  }
+
   nav .container li
   {
     list-style-type: none;
     margin: 15px;
     overflow: hidden;
+    
     
   }
   nav .container h2
@@ -16,7 +29,7 @@ body {
   }
   nav .container 
   {
-    background: repeating-linear-gradient(to right, red 0%, blue 50%, red 100%);
+  background: repeating-linear-gradient(to right, red 0%, blue 50%, red 100%);
   width: 100%;
   background-size: 200% auto;
   background-position: 0 100%;
@@ -31,7 +44,7 @@ body {
   nav .container li a
   {
     text-decoration: none;
-    padding: 20px;
+    padding:20px;
     font-size: x-large;
     font-family: sans-serif;
     color:rgb(253, 253, 253)
@@ -40,13 +53,12 @@ body {
 
  .searchBox {
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform:  translate(-50%,50%);
     background: linear-gradient(90deg, rgb(30, 4, 48) 0%, rgb(147, 22, 22) 39%, rgb(14, 24, 60) 100%);
     height: 40px;
-    border-radius: 40px;
-    padding: 10px;
+    border-radius: 80px;
 
 }
 
@@ -110,5 +122,23 @@ body {
  .text
 {
     color: aliceblue;
-    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    line-height:80px;
+    text-align-last:left;
+    
+    
+}
+
+
+
+.text{
+  padding-left: 100px;
+}
+
+.text_1
+{
+  color: aliceblue;
+  text-align: center;
+  font-family: sans-serif;
 }
